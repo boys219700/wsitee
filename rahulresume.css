@@ -145,7 +145,7 @@ footer{
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background:linear-gradient(to right,rgb(230, 118, 118),purple,rgb(116, 208, 116));
+  background:linear-gradient(to right,rgb(203, 204, 110),rgb(207, 111, 207),rgb(149, 211, 149));
   color: black;
   padding-top: 60px;
   box-shadow: 5px 5px 5px rgb(191, 183, 120);
