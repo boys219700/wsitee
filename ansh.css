@@ -7,26 +7,21 @@ body {
     display: grid;
     grid-template-columns: auto auto auto;
     margin: 0px;
-    background-color: #8383a9;
+    background-color: rgb(173, 172, 172);
     padding: 0px;
 }
 
 #main1 {
-    background-color: rgb(189 157 89);
+    background-color: rgb(97, 89, 88);
     width: 37vw;
     height: 94.5vh;
     padding: 10px;
-    margin: 5px;
-    margin-right: 0px;
+    margin: 5px 0px 5px 5px;
     border-radius: 15px;
     display: grid;
 }
 
 #main2 {
-    background-image: url("main1_bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.7;
     background-color: rgb(228, 224, 224);
     width: 59vw;
     height: 94.5vh;
@@ -41,7 +36,6 @@ body {
     width: 400px;
     margin: 0px;
     border-radius: 50%;
-    position: ce;
 }
 
 #photo1 {
@@ -63,6 +57,8 @@ body {
 
 #intro {
     font-size: 25px;
+    margin-left: 23px;
+    /* padding-right: 30px; */
 }
 
 #des {
@@ -83,30 +79,29 @@ body {
 #des:hover #des-drop {
     display: block;
     margin-right: 20px;
-    font-weight: 6000;
     font-size: 2px;
     overflow: hidden;
-    border-right: .17em solid pink;
+    border-right: 0.17em solid pink;
     white-space: nowrap;
-    letter-spacing: .1em;
-    animation: typing 3.5s steps(30, end), blinking-cursor .5s step-end infinite;
+    letter-spacing: 0.1em;
+    animation: 5.5s steps(30) 0s 1 normal none running typing, 0.5s step-end 0s infinite normal none running blinking-cursor;
 }
 
 @keyframes typing {
-    from {
-        width: 0
+    0% {
+        width: 0px;
     }
 
-    to {
-        width: 100%
+    100% {
+        width: 100%;
     }
 }
 
 @keyframes blinking-cursor {
 
-    from,
-    to {
-        border-color: transparent
+    0%,
+    100% {
+        border-color: transparent;
     }
 
     50% {
@@ -160,13 +155,15 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 span {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-size: 35px;
     font-weight: bold;
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 #name {
@@ -174,4 +171,17 @@ span {
     font-style: italic;
     font-size: 45px;
     text-align: center;
+}
+
+.team {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+}
+
+.team1 {
+    color: rgb(93 100 124);
+    margin: 20px;
+    margin-top: 60px;
 }
